@@ -25,8 +25,11 @@
 
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/color.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
   <link href="assets/cdn.jsdelivr.net/npm/%40mdi/font%402.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
   <title>Bharat Savani | Full Stack Developer</title>  
     
 </head>
@@ -372,7 +375,7 @@
         <div class="col-md-6 col-lg-7 project-card__info">
           <h3 class="project-card__title">Landing page for quantacodes</h3>
           <p class="project-card__description">
-            content="Quantacodes Solutions is top rated web and mobile development agency. Hire devops certified engineers to build an excellent cloud architecture and want to develop a landing page in vuejs nuxtjs.
+            Quantacodes Solutions is top rated web and mobile development agency. Hire devops certified engineers to build an excellent cloud architecture and want to develop a landing page in vuejs nuxtjs.
           </p>
           <p class="project-card__stack">Used stack:</p>
           <ul class="tags">
@@ -515,21 +518,21 @@
             <p class="contacts__form-title">Or just write me a letter here_</p>
             <form class="js-form">
               <div class="form-group">
-                <input class="form-field js-field-name" type="text" placeholder="Your name" required>
+                <input class="form-field js-field-name" id='sender_name' type="text" placeholder="Your name" required>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <input class="form-field js-field-email" type="email"  placeholder="Your e-mail" required>
+                <input class="form-field js-field-email" id="sender_email" type="email"  placeholder="Your e-mail" required>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
               <div class="form-group">
-                <textarea class="form-field js-field-message" placeholder="Type the message here" required></textarea>
+                <textarea class="form-field js-field-message" id="sender_msg" placeholder="Type the message here" required></textarea>
                 <span class="form-validation"></span>
                 <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
               </div>
-              <button class="site-btn site-btn--form" type="submit" value="Send">Send</button>
+              <button class="site-btn site-btn--form" type="button" id="send_mail" value="Send">Send</button>
             </form>
           </div>
           <div class="footer">
@@ -554,7 +557,10 @@
   <script src="assets/js/contacts.js"></script>
   <script src="assets/js/mbclicker.min.js"></script>
   <script src="assets/js/site-btn.js"></script>
-  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>
