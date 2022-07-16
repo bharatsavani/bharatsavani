@@ -19,4 +19,4 @@ $(document).on('click', '#send_mail' , function(){
             notyf.error('There is some internal error please try again :(');
         });
     }
-});
+})
